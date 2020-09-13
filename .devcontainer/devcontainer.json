@@ -2,5 +2,5 @@
     "name": "Codespaces Test",
     "dockerFile": "Dockerfile",
     "remoteUser": "user",
-    "postAttachCommand": ["poetry", "install"]
+    "postCreateCommand": ["poetry", "install"]
   }
