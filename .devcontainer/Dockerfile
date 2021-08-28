@@ -4,11 +4,10 @@ ARG USERNAME=user
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-ENV DEBIAN_FRONTEND=noninteractive
 ENV SHELL /bin/bash
 
 RUN apt-get update \
-&& apt-get install -y \
+&& DEBIAN_FRONTEND=noninteractive apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
