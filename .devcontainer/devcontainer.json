@@ -1,6 +1,6 @@
 {
-    "name": "Codespaces Test",
-    "dockerFile": "Dockerfile",
-    "remoteUser": "user",
-    "postCreateCommand": ["poetry", "install"]
-  }
+  "name": "Codespaces Test",
+  "dockerFile": "Dockerfile",
+  "remoteUser": "user",
+  "postCreateCommand": ["poetry", "install"]
+}
