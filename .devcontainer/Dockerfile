@@ -6,8 +6,9 @@ ARG USER_GID=$USER_UID
 
 ENV SHELL /bin/bash
 
-RUN apt-get update \
-&& DEBIAN_FRONTEND=noninteractive apt-get install -y \
+RUN export DEBIAN_FRONTEND=noninteractive \
+&& apt-get update \
+&& apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
